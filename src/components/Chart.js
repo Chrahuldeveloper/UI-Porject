@@ -131,7 +131,7 @@ export default function Chart() {
         </ul>
       </div>
 
-      <div className="chart-container relative mt-7">
+      <div className="relative chart-container mt-7">
         <LineChart
           height={350}
           width={chartWidth}
@@ -168,8 +168,8 @@ export default function Chart() {
             strokeLinecap="square"
           />
         </LineChart>
-        <div className="hidden md:block">
-        <div className="absolute top-5 right-60 space-y-10 flex flex-col ">
+        {/* <div className="hidden md:block">
+        <div className="absolute flex flex-col space-y-10 top-5 right-60 ">
           <button className="px-8 py-1 text-white bg-black rounded-md">
             64,850.35
           </button>
@@ -177,7 +177,7 @@ export default function Chart() {
             63,179.71
           </button>
         </div>
-      </div>
+      </div> */}
       </div>
     </>
   );
