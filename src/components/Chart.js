@@ -41,7 +41,7 @@ const data = [
   { name: "2024-01-27", value: 10000 },
   { name: "2024-01-28", value: 80000 },
   { name: "2024-01-29", value: 99000 },
-  { name: "2024-01-30", value:  63179},
+  { name: "2024-01-30", value: 63179 },
 ];
 
 const CustomXAxisTick = ({ x, y, payload }) => (
@@ -131,14 +131,14 @@ export default function Chart() {
         </ul>
       </div>
 
-      <div className="absolute hidden right-36 md:block">
+      <div className="absolute hidden right-52 md:block  z-50">
         <div className="translate-y-28">
           <button className="px-8 py-1 text-white bg-black rounded-md ">
             64,850.35
           </button>
         </div>
       </div>
-      <div className="absolute hidden right-36 md:block">
+      <div className="absolute hidden right-52 md:block  z-50">
         <div className="translate-y-44">
           <button className="bg-[#4b40ee] rounded-md px-8 py-1 text-white ">
             63,179.71
