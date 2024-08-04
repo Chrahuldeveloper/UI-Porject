@@ -52,7 +52,7 @@ const CustomXAxisTick = ({ x, y, payload }) => (
 
 export default function Chart() {
   const [chartWidth, setChartWidth] = useState(
-    window.innerWidth < 768 ? 450 : 1000
+    window.innerWidth < 768 ? 150 : 1000
   );
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isCompare, setIsCompare] = useState(false);
@@ -136,7 +136,7 @@ export default function Chart() {
           height={350}
           width={chartWidth}
           data={data}
-          className="pr-6 mx-auto"
+          className="mx-auto "
         >
           <defs>
             <linearGradient id="gradientColor" x1="0" y1="0" x2="0" y2="1">
