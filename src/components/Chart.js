@@ -12,86 +12,36 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "2024-01-01", value: 10 },
-  { name: "2024-01-02", value: 40 },
-  { name: "2024-01-03", value: 30 },
-  { name: "2024-01-04", value: 80 },
-  { name: "2024-01-05", value: 20 },
-  { name: "2024-01-06", value: 50 },
-  { name: "2024-01-07", value: 10 },
-  { name: "2024-01-08", value: 70 },
-  { name: "2024-01-09", value: 30 },
-  { name: "2024-01-10", value: 90 },
-  { name: "2024-01-11", value: 40 },
-  { name: "2024-01-12", value: 20 },
-  { name: "2024-01-13", value: 80 },
-  { name: "2024-01-14", value: 50 },
-  { name: "2024-01-15", value: 30 },
-  { name: "2024-01-16", value: 60 },
-  { name: "2024-01-17", value: 20 },
-  { name: "2024-01-18", value: 90 },
-  { name: "2024-01-19", value: 40 },
-  { name: "2024-01-20", value: 70 },
-  { name: "2024-01-21", value: 20 },
-  { name: "2024-01-22", value: 80 },
-  { name: "2024-01-23", value: 50 },
-  { name: "2024-01-24", value: 10 },
-  { name: "2024-01-25", value: 60 },
-  { name: "2024-01-01", value: 10 },
-  { name: "2024-01-02", value: 40 },
-  { name: "2024-01-03", value: 30 },
-  { name: "2024-01-04", value: 80 },
-  { name: "2024-01-05", value: 20 },
-  { name: "2024-01-06", value: 50 },
-  { name: "2024-01-07", value: 10 },
-  { name: "2024-01-08", value: 70 },
-  { name: "2024-01-09", value: 30 },
-  { name: "2024-01-10", value: 90 },
-  { name: "2024-01-11", value: 40 },
-  { name: "2024-01-12", value: 20 },
-  { name: "2024-01-13", value: 80 },
-  { name: "2024-01-14", value: 50 },
-  { name: "2024-01-15", value: 30 },
-  { name: "2024-01-16", value: 60 },
-  { name: "2024-01-17", value: 20 },
-  { name: "2024-01-18", value: 90 },
-  { name: "2024-01-19", value: 40 },
-  { name: "2024-01-20", value: 70 },
-  { name: "2024-01-21", value: 20 },
-  { name: "2024-01-22", value: 80 },
-  { name: "2024-01-23", value: 50 },
-  { name: "2024-01-24", value: 10 },
-  { name: "2024-01-25", value: 60 },
-  { name: "2024-01-01", value: 10 },
-  { name: "2024-01-02", value: 40 },
-  { name: "2024-01-03", value: 30 },
-  { name: "2024-01-04", value: 80 },
-  { name: "2024-01-05", value: 20 },
-  { name: "2024-01-06", value: 50 },
-  { name: "2024-01-07", value: 10 },
-  { name: "2024-01-08", value: 70 },
-  { name: "2024-01-09", value: 30 },
-  { name: "2024-01-10", value: 90 },
-  { name: "2024-01-11", value: 40 },
-  { name: "2024-01-12", value: 20 },
-  { name: "2024-01-13", value: 80 },
-  { name: "2024-01-14", value: 50 },
-  { name: "2024-01-15", value: 30 },
-  { name: "2024-01-16", value: 60 },
-  { name: "2024-01-17", value: 20 },
-  { name: "2024-01-18", value: 90 },
-  { name: "2024-01-19", value: 40 },
-  { name: "2024-01-20", value: 70 },
-  { name: "2024-01-21", value: 20 },
-  { name: "2024-01-22", value: 80 },
-  { name: "2024-01-23", value: 50 },
-  { name: "2024-01-24", value: 10 },
-  { name: "2024-01-25", value: 60 },
-  { name: "2024-01-26", value: 30 },
-  { name: "2024-01-27", value: 90 },
-  { name: "2024-01-28", value: 20 },
-  { name: "2024-01-29", value: 80 },
-  { name: "2024-01-30", value: 50 },
+  { name: "2024-01-01", value: 84850.35 },
+  { name: "2024-01-02", value: 90000.71 },
+  { name: "2024-01-03", value: 63000 },
+  { name: "2024-01-04", value: 67000 },
+  { name: "2024-01-05", value: 67000 },
+  { name: "2024-01-06", value: 65000 },
+  { name: "2024-01-07", value: 72910 },
+  { name: "2024-01-08", value: 67000 },
+  { name: "2024-01-09", value: 63000 },
+  { name: "2024-01-10", value: 68000 },
+  { name: "2024-01-11", value: 65900 },
+  { name: "2024-01-12", value: 62000 },
+  { name: "2024-01-13", value: 65450 },
+  { name: "2024-01-14", value: 69000 },
+  { name: "2024-01-15", value: 90000 },
+  { name: "2024-01-16", value: 80760 },
+  { name: "2024-01-17", value: 82000 },
+  { name: "2024-01-18", value: 69057 },
+  { name: "2024-01-19", value: 64000 },
+  { name: "2024-01-20", value: 67000 },
+  { name: "2024-01-21", value: 90000 },
+  { name: "2024-01-22", value: 6800 },
+  { name: "2024-01-23", value: 65200 },
+  { name: "2024-01-24", value: 10000 },
+  { name: "2024-01-25", value: 66000 },
+  { name: "2024-01-26", value: 60000 },
+  { name: "2024-01-27", value: 10000 },
+  { name: "2024-01-28", value: 80000 },
+  { name: "2024-01-29", value: 99000 },
+  { name: "2024-01-30", value:  63179},
 ];
 
 const CustomXAxisTick = ({ x, y, payload }) => (
@@ -181,11 +131,10 @@ export default function Chart() {
         </ul>
       </div>
 
-  
       <div className="absolute hidden right-36 md:block">
         <div className="translate-y-28">
           <button className="px-8 py-1 text-white bg-black rounded-md ">
-            63,179.71
+            64,850.35
           </button>
         </div>
       </div>
@@ -196,7 +145,6 @@ export default function Chart() {
           </button>
         </div>
       </div>
-     
 
       <div className="chart-container mt-7">
         <LineChart
