@@ -131,27 +131,12 @@ export default function Chart() {
         </ul>
       </div>
 
-      <div className="absolute hidden right-52 md:block  z-50">
-        <div className="translate-y-28">
-          <button className="px-8 py-1 text-white bg-black rounded-md ">
-            64,850.35
-          </button>
-        </div>
-      </div>
-      <div className="absolute hidden right-52 md:block  z-50">
-        <div className="translate-y-44">
-          <button className="bg-[#4b40ee] rounded-md px-8 py-1 text-white ">
-            63,179.71
-          </button>
-        </div>
-      </div>
-
-      <div className="chart-container mt-7">
+      <div className="chart-container relative mt-7">
         <LineChart
           height={350}
           width={chartWidth}
           data={data}
-          className="mx-auto "
+          className="mx-auto"
         >
           <defs>
             <linearGradient id="gradientColor" x1="0" y1="0" x2="0" y2="1">
@@ -183,6 +168,15 @@ export default function Chart() {
             strokeLinecap="square"
           />
         </LineChart>
+
+        <div className="absolute top-5 right-28 space-y-10 flex flex-col">
+          <button className="px-8 py-1 text-white bg-black rounded-md">
+            64,850.35
+          </button>
+          <button className="bg-[#4b40ee] rounded-md px-8 py-1 text-white">
+            63,179.71
+          </button>
+        </div>
       </div>
     </>
   );
