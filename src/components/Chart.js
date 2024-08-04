@@ -52,7 +52,7 @@ const CustomXAxisTick = ({ x, y, payload }) => (
 
 export default function Chart() {
   const [chartWidth, setChartWidth] = useState(
-    window.innerWidth < 768 ? 150 : 1000
+    window.innerWidth < 768 ? 250 : 1000
   );
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isCompare, setIsCompare] = useState(false);
@@ -61,7 +61,7 @@ export default function Chart() {
 
   useEffect(() => {
     const handleResize = () => {
-      setChartWidth(window.innerWidth < 768 ? 150 : 1000);
+      setChartWidth(window.innerWidth < 768 ? 250 : 1000);
     };
 
     window.addEventListener("resize", handleResize);
