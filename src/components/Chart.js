@@ -181,6 +181,14 @@ export default function Chart() {
         </ul>
       </div>
 
+  
+      <div className="absolute hidden right-36 md:block">
+        <div className="translate-y-28">
+          <button className="px-8 py-1 text-white bg-black rounded-md ">
+            63,179.71
+          </button>
+        </div>
+      </div>
       <div className="absolute hidden right-36 md:block">
         <div className="translate-y-44">
           <button className="bg-[#4b40ee] rounded-md px-8 py-1 text-white ">
@@ -188,6 +196,7 @@ export default function Chart() {
           </button>
         </div>
       </div>
+     
 
       <div className="chart-container mt-7">
         <LineChart
