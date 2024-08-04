@@ -37,6 +37,56 @@ const data = [
   { name: "2024-01-23", value: 50 },
   { name: "2024-01-24", value: 10 },
   { name: "2024-01-25", value: 60 },
+  { name: "2024-01-01", value: 10 },
+  { name: "2024-01-02", value: 40 },
+  { name: "2024-01-03", value: 30 },
+  { name: "2024-01-04", value: 80 },
+  { name: "2024-01-05", value: 20 },
+  { name: "2024-01-06", value: 50 },
+  { name: "2024-01-07", value: 10 },
+  { name: "2024-01-08", value: 70 },
+  { name: "2024-01-09", value: 30 },
+  { name: "2024-01-10", value: 90 },
+  { name: "2024-01-11", value: 40 },
+  { name: "2024-01-12", value: 20 },
+  { name: "2024-01-13", value: 80 },
+  { name: "2024-01-14", value: 50 },
+  { name: "2024-01-15", value: 30 },
+  { name: "2024-01-16", value: 60 },
+  { name: "2024-01-17", value: 20 },
+  { name: "2024-01-18", value: 90 },
+  { name: "2024-01-19", value: 40 },
+  { name: "2024-01-20", value: 70 },
+  { name: "2024-01-21", value: 20 },
+  { name: "2024-01-22", value: 80 },
+  { name: "2024-01-23", value: 50 },
+  { name: "2024-01-24", value: 10 },
+  { name: "2024-01-25", value: 60 },
+  { name: "2024-01-01", value: 10 },
+  { name: "2024-01-02", value: 40 },
+  { name: "2024-01-03", value: 30 },
+  { name: "2024-01-04", value: 80 },
+  { name: "2024-01-05", value: 20 },
+  { name: "2024-01-06", value: 50 },
+  { name: "2024-01-07", value: 10 },
+  { name: "2024-01-08", value: 70 },
+  { name: "2024-01-09", value: 30 },
+  { name: "2024-01-10", value: 90 },
+  { name: "2024-01-11", value: 40 },
+  { name: "2024-01-12", value: 20 },
+  { name: "2024-01-13", value: 80 },
+  { name: "2024-01-14", value: 50 },
+  { name: "2024-01-15", value: 30 },
+  { name: "2024-01-16", value: 60 },
+  { name: "2024-01-17", value: 20 },
+  { name: "2024-01-18", value: 90 },
+  { name: "2024-01-19", value: 40 },
+  { name: "2024-01-20", value: 70 },
+  { name: "2024-01-21", value: 20 },
+  { name: "2024-01-22", value: 80 },
+  { name: "2024-01-23", value: 50 },
+  { name: "2024-01-24", value: 10 },
+  { name: "2024-01-25", value: 60 },
   { name: "2024-01-26", value: 30 },
   { name: "2024-01-27", value: 90 },
   { name: "2024-01-28", value: 20 },
@@ -52,7 +102,7 @@ const CustomXAxisTick = ({ x, y, payload }) => (
 
 export default function Chart() {
   const [chartWidth, setChartWidth] = useState(
-    window.innerWidth < 768 ? 250 : 1000
+    window.innerWidth < 768 ? 350 : 1000
   );
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isCompare, setIsCompare] = useState(false);
@@ -61,7 +111,7 @@ export default function Chart() {
 
   useEffect(() => {
     const handleResize = () => {
-      setChartWidth(window.innerWidth < 768 ? 250 : 1000);
+      setChartWidth(window.innerWidth < 768 ? 350 : 1000);
     };
 
     window.addEventListener("resize", handleResize);
@@ -129,6 +179,14 @@ export default function Chart() {
             </React.Fragment>
           ))}
         </ul>
+      </div>
+
+      <div className="absolute hidden right-36 md:block">
+        <div className="translate-y-44">
+          <button className="bg-[#4b40ee] rounded-md px-8 py-1 text-white ">
+            63,179.71
+          </button>
+        </div>
       </div>
 
       <div className="chart-container mt-7">
