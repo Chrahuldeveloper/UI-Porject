@@ -168,15 +168,6 @@ export default function Chart() {
             strokeLinecap="square"
           />
         </LineChart>
-
-        <div className="absolute top-5 right-28 space-y-10 flex flex-col">
-          <button className="px-8 py-1 text-white bg-black rounded-md">
-            64,850.35
-          </button>
-          <button className="bg-[#4b40ee] rounded-md px-8 py-1 text-white">
-            63,179.71
-          </button>
-        </div>
       </div>
     </>
   );
